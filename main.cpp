@@ -163,14 +163,20 @@ public:
     }
     if (filter_whitelist.empty()) {
         filter_whitelist.insert(NODE_NETWORK); // x1
+        filter_whitelist.insert(NODE_NETWORK | NODE_MWEB); // x1000000
         filter_whitelist.insert(NODE_NETWORK | NODE_BLOOM); // x5
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS); // x9
+        filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_MWEB); // x1000009
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_COMPACT_FILTERS); // x49
+        filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB); // x1000049
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_BLOOM); // xd
         filter_whitelist.insert(NODE_NETWORK_LIMITED); // x400
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_MWEB); // x1000400
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_BLOOM); // x404
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS); // x408
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_MWEB); // x1000408
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_COMPACT_FILTERS); // x448
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB); // x1000448
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_BLOOM); // x40c
     }
     if (host != NULL && ns == NULL) showHelp = true;

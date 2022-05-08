@@ -64,6 +64,7 @@ enum
     NODE_WITNESS = (1 << 3),
     NODE_COMPACT_FILTERS = (1 << 6),
     NODE_NETWORK_LIMITED = (1 << 10),
+    NODE_MWEB = (1 << 24),
 };
 
 class CAddress : public CService

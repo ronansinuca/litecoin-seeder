@@ -212,8 +212,11 @@ public:
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_MWEB); // x1000009
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_COMPACT_FILTERS); // x49
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB); // x1000049
+        filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB | NODE_MWEB_LIGHT_CLIENT); //0x1800049
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_P2P_V2); // x809
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS); //x849
+        filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS | NODE_MWEB); //0x1000849
+        filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS | NODE_MWEB | NODE_MWEB_LIGHT_CLIENT); //0x1800849
         filter_whitelist.insert(NODE_NETWORK | NODE_WITNESS | NODE_BLOOM); // xd
         filter_whitelist.insert(NODE_NETWORK_LIMITED); // x400
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_MWEB); // x1000400
@@ -221,8 +224,12 @@ public:
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS); // x408
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_MWEB); // x1000408
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_COMPACT_FILTERS); // x448
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB); // 0x1000448
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_COMPACT_FILTERS | NODE_MWEB | NODE_MWEB_LIGHT_CLIENT); // 0x1800448
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_P2P_V2); // xc08
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS); // xc48
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS | NODE_MWEB); // 0x1000c48
+        filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_P2P_V2 | NODE_COMPACT_FILTERS | NODE_MWEB | NODE_MWEB_LIGHT_CLIENT); // 0x1800c48
         filter_whitelist.insert(NODE_NETWORK_LIMITED | NODE_WITNESS | NODE_BLOOM); // x40c
     }
     if (host != NULL && ns == NULL) showHelp = true;

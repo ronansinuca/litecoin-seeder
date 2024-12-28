@@ -480,7 +480,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"127.0.0.1", ""};
+static const string mainnet_seeds[] = {"dnsseed.rcn-project.com",  ""};
 static const string testnet_seeds[] = { ""};
 static const string *seeds = mainnet_seeds;
 static vector<string> vSeeds;
